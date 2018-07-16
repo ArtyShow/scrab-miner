@@ -1,6 +1,6 @@
 # grub web info. Python 3.5
 # Autor: Romanov Artem
-# Email: artem@romanov.one
+# Email: develop@romanov.one
 
 
 import requests
