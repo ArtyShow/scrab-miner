@@ -8,7 +8,7 @@ from lxml import html
 import sqlite3
 import re
 
-conn = sqlite3.connect("/sqlite_bd/miners.db")
+conn = sqlite3.connect("miners.db")
 cursor = conn.cursor()
 
 def is_available(host):
