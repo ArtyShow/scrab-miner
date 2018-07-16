@@ -32,9 +32,13 @@ apache/nginx
 # Installation
 
 <b>grub.py</b> - you can to run this file via python3 in crontab
+
 <b>index.php</b> - index page
+
 <b>edit.php</b> - edit devices and groups
+
 <b>folder "js"</b> - jQuery
+
 You can to move this files into root-folder of WebServer and run grub.py. After this create file "miners.db" and you open a web-browser http://localhost and can to add devices. Add grub.py into crontab.
 
 # P.S.
