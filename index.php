@@ -36,7 +36,7 @@ td#name_group {
 
 <?php
 
-$db = new SQLite3('/sqlite_bd/miners.db');
+$db = new SQLite3('miners.db');
 echo "<h1><b>Summary statistic:</b></h1><br>";
 echo "<table border='0'>";
 $count_devices = $db->querySingle('SELECT count(*) as c FROM miners_device');
