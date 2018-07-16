@@ -34,7 +34,7 @@ tr#device_info_pools { text-align: left; }
 <?php
 
 
-$db = new SQLite3('/sqlite_bd/miners.db');
+$db = new SQLite3('miners.db');
 if (!$db) exit("Не удалось прочитать базу данных!"); 
 echo "<a href='index.php'><- Назад</a><br>";
 
