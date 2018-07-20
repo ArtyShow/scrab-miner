@@ -62,7 +62,8 @@ echo "<TABLE border='1' >";
 echo "<tr><th>IP адрес</th><th>Пользователь</th><th>Тип</th><th>Summary GH/S 5s</th><th>Summary GH/S avg</th>
       <th>Время работы</th><th>Время проверки</th><th>Подробнее</th></tr>";
 
-$devices = $db->query('SELECT * FROM miners_device ORDER BY device_group ASC');
+$devices = $db->query('SELECT ip, status, type, minertype, login, password, name, ghs5s, ghsavg, uptime, datetime(last_check,"localtime") as last_check, 
+                       datetime(last_success_check,"localtime") as last_success_check FROM miners_device ORDER BY device_group ASC');
 $groups_code = -1;
 
 while ($device = $devices->fetchArray()) {
