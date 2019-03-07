@@ -24,9 +24,9 @@ Group add page:
 
 # Requirements
 
-sqlite 3
-python 2.7 and over
-php 7
+sqlite 3(php7.2-sqlite3),
+python 2.7 and over,
+php 7,
 apache/nginx
 
 # Installation
@@ -39,7 +39,7 @@ apache/nginx
 
 <b>folder "js"</b> - jQuery
 
-You can to move this files into root-folder of WebServer and run grub.py. After this create file "miners.db" and you open a web-browser http://localhost and can to add devices. Add grub.py into crontab.
+You can to move this files into root-folder of WebServer and run grub.py. After this create file "miners.db" and you open a web-browser http://localhost and can to add devices. Add grub.py into crontab. Check correct permissions on files.
 
 # P.S.
 Suggestions or thanks go to 
