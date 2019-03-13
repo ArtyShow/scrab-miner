@@ -256,6 +256,8 @@ def get_stat (ipaddr):
         miners_device['type'] = miner
     except requests.exceptions.RequestException:
         miners_device['type'] = miner
+    except requests.exceptions.ReadTimeoutError:
+        miners_device['type'] = miner
 
     return miners_device
 
